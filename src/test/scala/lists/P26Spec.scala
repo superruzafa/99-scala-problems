@@ -17,7 +17,6 @@ class P26Spec extends FunSuite {
   test("P25 - Combinations a list") {
     val l = List("a", "b", "c", "d", "e")
     val combs = combinations(3, l)
-    println(combs)
     assert(combs forall { _.length == 3 })
     assert(combs forall { _.forall { l.contains }})
   }
